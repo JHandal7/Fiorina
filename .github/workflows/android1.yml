@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Android CI
 
 # Controls when the workflow will run
 on:
@@ -24,13 +24,13 @@ jobs:
     steps:
     - name: Checkout
     uses: action/checkout@v2.4.2
-  -name: Setup JDK
+ - name: Setup Java JDK
   uses: actions/setup-java@v3.3.0
   with:
     java-version: 1.8
-    -name: Build with Gradle
+    - name: Build with Gradle
     run: ./gradlew build
-    -name: Upload APK
+    - name: Upload APK
      uses: actions/upload-artifact@v3.1.0
   with:
     name: app
