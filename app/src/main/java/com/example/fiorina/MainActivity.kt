@@ -55,7 +55,7 @@ fun MyApp(content: @Composable ()->Unit){
             Counter(count = counterState,
                 update = { newValue -> counterState = newValue })
 
-            if (counterState > 4) {
+            if (counterState > 6) {
                 Text("I love to count")
             }
 
@@ -76,7 +76,7 @@ fun MyApp(content: @Composable ()->Unit){
 fun Greeting(name: String) {
     var isSelected by remember{ mutableStateOf(false)}
     val targetColor by animateColorAsState(if (isSelected) MaterialTheme.colors.primary else Color.Transparent,
-    animationSpec = tween(6000)
+    animationSpec = tween(7000)
     )
     androidx.compose.material.Surface() {
 Surface(color=targetColor) {
