@@ -24,6 +24,8 @@ import androidx.compose.ui.unit.dp
 import com.example.fiorina.ui.theme.FiorinaTheme
 import kotlin.reflect.KProperty
 
+
+//new branch2
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
